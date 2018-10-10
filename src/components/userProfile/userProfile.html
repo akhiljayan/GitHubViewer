@@ -1,0 +1,10 @@
+<div class="row" style="margin:20px">
+    <div class="col-2" ng-if="vm.owner">
+        <img src="{{vm.owner.avatar_url}}" alt="GitHub" style="border-radius:50%;width: 100%; height: auto;">
+    </div>
+    <div class="col-6">
+        <h3 style="margin-top: 15px;">{{vm.owner.login}}</h3><br>
+        <small ng-if="vm.owner"><a class="btn btn-smallest btn-success" target="_blank" ng-href="{{vm.owner.html_url}}">View profile</a></small>
+        <small><button class="btn btn-smallest btn-danger" ng-click="vm.gobackToHome()">Go Back</button></small>
+    </div>
+</div>

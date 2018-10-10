@@ -1,0 +1,6 @@
+<user-profile  user="vm.user" model="vm.projects"></user-profile>
+<div class="row no-margin" style="margin: 24px 22px 0px 22px;">
+    <div class="col-6 col-grid" ng-repeat="project in vm.projects">
+        <repo-details user="vm.user" model="project" count="$index+1"></repo-details>
+    </div>
+</div>

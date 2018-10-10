@@ -1,0 +1,12 @@
+<div class="row info-block">
+    <div class="col-md-2 inline-block number-parent">
+        <div class="numberCircle">{{vm.count}}</div>
+    </div>
+    <div class="col-md-8 inline-block">
+        <h5>{{vm.model.name}}</h5>
+        <small>Size: {{vm.model.size}}</small>&nbsp;&#8226;&nbsp;<small>language: {{vm.model.language}}</small><br>
+        <small>Created At: {{vm.model.created_at}}</small><br>
+        <small><a class="btn btn-smallest btn-warning" target="_blank" href="{{vm.html_url}}">View Files</a></small>
+        <small><button class="btn btn-smallest btn-success"  ng-click="vm.showReadMe(vm.model.name,vm.model.owner.login)">View Read Me file contents</button></small>
+    </div>
+</div>
